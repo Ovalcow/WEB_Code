@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr"></html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Stellaris: Guide pour débuter</title>
+    </head>
+    <body> 
+        <h1>Stellaris</h1>
+        <nav>
+            <p> Aller a la section :
+            <a href="#presentation">Présentation</a> |
+            <a href="#gameplay">Gameplay</a> |
+            <a href="#factions">Factions et Civilisations</a> |
+            <a href="#galerie">Galerie</a>
+            </p>
+        </nav>
+          <section id="presentation">
+            <h2>Présentation du jeu</h2>
+            <p>
+                Stellaris est un jeu de stratégie en temps réel développé par
+                <a href="https://www.paradoxinteractive.com" target="_blank">Paradox Interactive</a>
+                et sorti en mai 2016. Le joueur dirige une civilisation spatiale depuis ses
+                premiers pas dans l'espace jusqu'à la domination galactique.
+            </p>
+            <p>
+                Le jeu se distingue par sa profondeur narrative, ses événements aléatoires
+                et la grande liberté laissée au joueur dans la construction de son empire.
+                Chaque partie est unique grâce à la génération procédurale de la galaxie.
+            </p>
+        </section>
+        <section id="gameplay">
+            <h2>Gameplay</h2>
+            <p>Stellaris combine plusieurs mécaniques de jeu :</p>
+            <ul>
+                <li><strong>Exploration</strong> : cartographiez de nouveaux systèmes stellaires.</li>
+                <li><strong>Colonisation</strong> : établissez des colonies sur des planètes habitables.</li>
+                <li><strong>Diplomatie</strong> : négociez des alliances ou déclarez la guerre.</li>
+                <li><strong>Recherche</strong> : développez votre arbre technologique.</li>
+                <li><strong>Combat spatial</strong> : concevez vos flottes et affrontez vos ennemis.</li>
+            </ul>
+        </section>
+
+        <section id="factions">
+            <h2>Factions Civilisations</h2>
+            <p>
+                À la création d'une partie, le joueur personnalise entièrement sa civilisation :
+            </p>
+            <ul>
+                <li><strong>Races</strong> : Mammifères, Reptiliens, Insectoïdes, etc.</li>
+                <li><strong>Éthiques</strong> : Matérialiste, Spiritualiste, Xénophile, Militariste...</li>
+                <li><strong>Autorités</strong> : Démocratie, Oligarchie, Monarchie, Empire de Ruche...</li>
+                <li><strong>Traits d'espèce</strong> : caractéristiques biologiques influençant les performances.</li>
+            </ul>
+            <p>
+                Des <em>crises galactiques</em> peuvent émerger et menacer l'ensemble des empires,
+                forçant parfois des alliances inattendues.
+            </p>
+        </section>
+
+        <section id="galerie">
+            <h2>Galerie</h2>
+            <p>Cliquez sur la miniature pour afficher l'image en grand :</p>
+            <a href="stellaris.jpg" target="_blank">
+                <img src="stellaris.jpg" alt="Illustration officielle de Stellaris" width="320" />
+            </a>
+        </section>
+    </body>
