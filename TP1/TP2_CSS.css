@@ -84,6 +84,23 @@ h3 {
 
 p { margin-bottom: .85rem; }
 
+.section-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin-bottom: 1.5rem;
+    display: block;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.2);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.section-img:hover {
+    transform: scale(1.02);
+    box-shadow: var(--glow-cyan);
+}
+
 strong { color: var(--text-bright); font-weight: 600; }
 em { color: var(--cyan); font-style: italic; }
 
@@ -201,8 +218,9 @@ nav a {
     letter-spacing: .1em;
     text-transform: uppercase;
     color: var(--text-dim);
-    transition: color .2s, background .2s;
+    transition: color .2s, background .2s, border-color .2s;
     border-bottom: 2px solid transparent;
+    position: relative;
 }
 
 nav a:hover {
@@ -211,10 +229,18 @@ nav a:hover {
     border-bottom-color: var(--cyan);
 }
 
+nav a.active {
+    color: var(--cyan);
+    background: rgba(0, 212, 255, .1);
+    border-bottom-color: var(--gold);
+    font-weight: 600;
+}
+
 main {
     max-width: var(--max-w);
     margin: 0 auto;
     padding: 2rem 1.5rem 4rem;
+    width: 100%;
 }
 
 section {
@@ -246,10 +272,6 @@ section::before {
 section:nth-child(1) { animation-delay: .05s; }
 section:nth-child(2) { animation-delay: .1s; }
 section:nth-child(3) { animation-delay: .15s; }
-section:nth-child(4) { animation-delay: .2s; }
-section:nth-child(5) { animation-delay: .25s; }
-section:nth-child(6) { animation-delay: .3s; }
-section:nth-child(7) { animation-delay: .35s; }
 
 .section-label {
     font-size: .7rem;
@@ -569,9 +591,11 @@ footer p { margin-bottom: .4rem; }
 @media (max-width: 720px) {
     .two-col { grid-template-columns: 1fr; }
     .info-card { min-width: unset; }
-    section { padding: 1.5rem 1.25rem; }
+    section { padding: 1.5rem 1.25rem; margin-bottom: 1.5rem; }
     nav a { padding: .6rem .8rem; font-size: .72rem; }
     h1 { font-size: 2.8rem; }
+    .section-img { max-width: 100%; margin-bottom: 1.2rem; }
+    main { padding: 1.5rem 1rem 3rem; }
 }
 
 @media (max-width: 480px) {
@@ -579,5 +603,12 @@ footer p { margin-bottom: .4rem; }
     .civ-grid,
     .ascension-grid,
     .dlc-grid,
-    .tips-grid { grid-template-columns: 1fr; }
+    .tips-grid,
+    .crise-list { grid-template-columns: 1fr; }
+    nav { flex-direction: column; }
+    nav a { padding: .5rem 1rem; text-align: center; border-bottom: none; border-right: 2px solid transparent; }
+    nav a:hover { border-right-color: var(--cyan); }
+    nav a.active { border-right-color: var(--gold); }
+    main { padding: 1rem 0.75rem 2rem; }
+    section { padding: 1.2rem 1rem; margin-bottom: 1rem; }
 }
