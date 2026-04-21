@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tâches — Guide Stellaris</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .task { display: flex; align-items: center; margin: 5px 0; }
+        .task.done { text-decoration: line-through; }
+        input[type="text"] { margin: 10px 0; padding: 5px; }
+        button { padding: 5px 10px; margin-left: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-bg"></div>
+    <div class="header-content">
+        <p class="header-studio">Paradox Interactive · 2016</p>
+        <h1>STELLARIS</h1>
+        <p class="header-tagline">Dominez la galaxie. Forgez votre destin parmi les étoiles.</p>
+        <div class="header-badges">
+            <span class="badge">Grand Strategy</span>
+            <span class="badge">4X Spatial</span>
+            <span class="badge">Temps réel</span>
+            <span class="badge">Multijoueur</span>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html">Présentation</a>
+        <a href="gameplay.html">Gameplay</a>
+        <a href="conseils.html">Conseils</a>
+        <a href="todo.html" class="active">Tâches</a>
+    </nav>
+</header>
+
+<main>
+<section id="todo">
+    <div class="section-label">04 — TÂCHES</div>
+    <h2>Liste de Tâches à Faire</h2>
+    <input type="text" id="newTask" placeholder="Ajouter une nouvelle tâche">
+    <button onclick="addTask()">Ajouter</button>
+    <input type="text" id="search" placeholder="Rechercher des tâches" oninput="searchTasks()">
+    <div id="taskList"></div>
+</section>
+</main>
+
+<footer>
+    <p>Stellaris © Paradox Interactive</p>
+    <p class="footer-links">
+        <a href="https://www.paradoxinteractive.com" target="_blank">Site Officiel</a> ·
+        <a href="https://stellaris.paradoxwikis.com" target="_blank">Wiki Stellaris</a> ·
+        <a href="https://store.steampowered.com/app/281990/Stellaris/" target="_blank">Steam</a>
+    </p>
+</footer>
+
+<script src="todo.js"></script>
+</body>
+</html>

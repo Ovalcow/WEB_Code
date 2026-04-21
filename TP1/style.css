@@ -9,7 +9,7 @@
     --accent2:   #c4a230;
     --text:      #a09080;
     --text-hi:   #f0f0f0;
-    --text-lo:   #666;
+    --text-lo:   #f0f0f0;
     --red:       #c03828;
     --radius:    8px;
     --max-w:     1100px;
@@ -144,7 +144,6 @@ section {
 section + section {
     margin-top: 4rem;
     padding-top: 4rem;
-    border-top: 1px solid var(--border);
 }
 
 .section-label {
@@ -152,7 +151,7 @@ section + section {
     letter-spacing: .3em;
     text-transform: uppercase;
     color: var(--accent);
-    opacity: .6;
+    opacity: 1;
     margin-bottom: .3rem;
 }
 
@@ -302,7 +301,7 @@ section + section {
     margin-bottom: .3rem;
     font-size: .72rem;
     color: var(--text-hi);
-    opacity: .45;
+    opacity: 1;
 }
 .asc-stat > span:first-child { width: 65px; flex-shrink: 0; }
 
@@ -394,7 +393,7 @@ section + section {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
-    color: rgba(255,255,255,.07);
+    color: rgba(255,255,255,1);
     line-height: 1;
     margin-bottom: .25rem;
 }
