@@ -414,7 +414,136 @@ footer p { margin-bottom: .3rem; }
 .footer-links a:hover { color: var(--accent); }
 
 @media (max-width: 1024px) {
-    .two-col { grid-template-columns: 1fr; }
-    .info-card { min-width: unset; }
-    main { padding: 2rem 1.25rem 4rem; }
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        min-width: unset;
+        width: 100%;
+    }
+
+    main {
+        padding: 2rem 1.25rem 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        letter-spacing: .06em;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .header-content {
+        padding: 1.5rem 1rem 1rem;
+    }
+
+    .header-tagline {
+        font-size: .8rem;
+    }
+
+    .header-badges {
+        display: none;
+    }
+
+    nav a {
+        padding: .55rem .75rem;
+        font-size: .68rem;
+        letter-spacing: .05em;
+    }
+
+    main {
+        padding: 1.5rem 1rem 3rem;
+        width: 100%;
+    }
+
+    section + section {
+        margin-top: 2.5rem;
+        padding-top: 2.5rem;
+    }
+
+    .section-img {
+        display: none;
+    }
+
+    .two-col,
+    .pilier-grid,
+    .civ-grid,
+    .ascension-grid,
+    .dlc-grid,
+    .tips-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .info-card {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .info-table td {
+        font-size: .78rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        display: block;
+        margin: .5rem 0;
+        padding: .5rem;
+        background: var(--surface2);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        color: var(--text-hi);
+        font-size: .9rem;
+    }
+
+    button {
+        width: 100%;
+        margin: .25rem 0;
+        padding: .5rem;
+        background: var(--accent);
+        border: none;
+        border-radius: var(--radius);
+        color: var(--text-hi);
+        font-size: .85rem;
+        cursor: pointer;
+    }
+
+    .task {
+        flex-wrap: wrap;
+        gap: .4rem;
+    }
+
+    .task button {
+        width: auto;
+        margin-left: auto;
+    }
+
+    .pilier p,
+    .asc-card p,
+    .crise p,
+    .dlc-card p,
+    .tip p,
+    .civ-block ul li {
+        font-size: .82rem;
+    }
+
+    .highlight-box {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    footer {
+        padding: 1.25rem 1rem;
+        font-size: .72rem;
+    }
 }
