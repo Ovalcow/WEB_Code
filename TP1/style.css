@@ -413,6 +413,36 @@ footer p { margin-bottom: .3rem; }
 .footer-links a { color: var(--text-lo); margin: 0 .2rem; }
 .footer-links a:hover { color: var(--accent); }
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--accent);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background: var(--surface);
+    color: var(--accent2);
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.scroll-to-top.visible {
+    display: flex;
+}
+
 @media (max-width: 1024px) {
     .two-col {
         grid-template-columns: 1fr;
@@ -545,5 +575,13 @@ footer p { margin-bottom: .3rem; }
     footer {
         padding: 1.25rem 1rem;
         font-size: .72rem;
+    }
+
+    .scroll-to-top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
     }
 }
